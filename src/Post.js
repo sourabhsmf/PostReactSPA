@@ -25,12 +25,14 @@ class Post extends React.Component {
               </div>
               { post.comments.length ?
                       post.comments.map((comment, i) =>
-                        <Comment key={i} {...comment}/>
+                        <div className="post-comment">
+                          <Comment key={i} {...comment}/>
+                          <AddNewComment postid={post.id}
+                            addComment={addComment}/>
+                        </div>
                       )
                 : ''
               }
-              <AddNewComment postid={post.id}
-                addComment={addComment}/>
             </div>
           ))
           :

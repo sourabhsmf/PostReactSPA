@@ -1,6 +1,7 @@
 import React from 'react';
 import Post from './Post';
 import AddPost from './AddNewPost';
+import data from '.././data/data';
 /**
  * Class for handling Post app state.
  */
@@ -12,7 +13,7 @@ class PostApp extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      posts: [],
+      posts: data.posts,
     };
     this.addPost = this.addPost.bind(this);
     this.addComment = this.addComment.bind(this);
