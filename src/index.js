@@ -1,12 +1,11 @@
-import React from "react"
-import {render} from "react-dom"
-import PostApp from "./PostApp"
-import data from "../data/data"
-window.React = React
+import React from 'react';
+import {render} from 'react-dom';
+import PostApp from './PostApp';
+window.React = React;
 
 render(
     <div className="main">
-        <PostApp/>
+      <PostApp/>
     </div>
-    ,document.getElementById("react-container")
-)
+    , document.getElementById('react-container')
+);
