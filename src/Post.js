@@ -31,7 +31,7 @@ class Post extends React.Component {
                             addComment={addComment}/>
                         </div>
                       )
-                : ''
+                : <AddNewComment postid={post.id} addComment={addComment}/>
               }
             </div>
           ))
