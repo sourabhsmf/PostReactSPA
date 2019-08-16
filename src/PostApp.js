@@ -53,8 +53,8 @@ class PostApp extends React.Component {
         body: commentbody,
       },
     ];
-    this.state.posts[index].comments = comments;
     const posts = this.state.posts;
+    posts[index].comments = comments;
     this.setState({posts});
   }
   /**
