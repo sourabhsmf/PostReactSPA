@@ -1,7 +1,9 @@
+const path = require("path")
+
 module.exports = {
     entry : "./src/index.js",
     output : {
-        path : "C:\\Users\\Sourabh\\Documents\\devs\\learn_react\\dist\\assets\\",
+        path : path.resolve(__dirname , "./dist/assets"),
         filename : "bundle.js",
         sourceMapFilename : "bundle.map"
     },
