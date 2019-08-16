@@ -1,73 +1,53 @@
 const data = {
-    posts : [
-      {
-        "userId": 1,
-        "id": 1,
-        "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
-        "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto",
-        "comments" : 
+  posts: [
+    {
+      'id': 1,
+      'title': 'Software Development Life Cycle',
+      'body': 'The software development life cycle (SDLC) is a framework'
+              + 'defining tasks performed at each step in the software'
+              + 'development process. SDLC is a structure followed by a'
+              + 'development team within the software organization.'
+              + 'It consists of a detailed plan describing how to develop,'
+              + 'maintain and replace specific software.',
+      'comments':
         [
-            {
-              "postId": 1,
-              "id": 1,
-              "name": "id labore ex et quam laborum",
-              "email": "Eliseo@gardner.biz",
-              "body": "laudantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium"
-            },
-            {
-              "postId": 1,
-              "id": 2,
-              "name": "quo vero reiciendis velit similique earum",
-              "email": "Jayne_Kuhic@sydney.com",
-              "body": "est natus enim nihil est dolore omnis voluptatem numquam\net omnis occaecati quod ullam at\nvoluptatem error expedita pariatur\nnihil sint nostrum voluptatem reiciendis et"
-            },
-            {
-              "postId": 1,
-              "id": 3,
-              "name": "odio adipisci rerum aut animi",
-              "email": "Nikita@garfield.biz",
-              "body": "quia molestiae reprehenderit quasi aspernatur\naut expedita occaecati aliquam eveniet laudantium\nomnis quibusdam delectus saepe quia accusamus maiores nam est\ncum et ducimus et vero voluptates excepturi deleniti ratione"
-            },
-            {
-              "postId": 1,
-              "id": 4,
-              "name": "alias odio sit",
-              "email": "Lew@alysha.tv",
-              "body": "non et atque\noccaecati deserunt quas accusantium unde odit nobis qui voluptatem\nquia voluptas consequuntur itaque dolor\net qui rerum deleniti ut occaecati"
-            },
-            {
-              "postId": 1,
-              "id": 5,
-              "name": "vero eaque aliquid doloribus et culpa",
-              "email": "Hayden@althea.biz",
-              "body": "harum non quasi et ratione\ntempore iure ex voluptates in ratione\nharum architecto fugit inventore cupiditate\nvoluptates magni quo et"
-            }
-        ]
-      }
-    ] 
+          {
+            'postId': 1,
+            'id': 1,
+            'name': 'Agile',
+            'email': 'Eliseo@gardner.biz',
+            'body': 'Agile software development is an approach to software'
+                    + 'development under which requirements and solutions'
+                    + 'evolve through the collaborative effort of'
+                    + 'self-organizing and cross-functional teams and'
+                    + 'their customer(s)/end user(s).',
+          },
+          {
+            'postId': 1,
+            'id': 2,
+            'name': 'What is Agile methodology in simple words?',
+            'email': 'Jayne_Kuhic@sydney.com',
+            'body': 'The Agile Method is a particular approach to project'
+                   + 'management that is utilized in software development.'
+                   + 'This method assists teams in responding to the '
+                   + 'unpredictability of constructing software. It uses '
+                   + 'incremental, iterative work sequences that are '
+                   + 'commonly known as sprints.',
+          },
+          {
+            'postId': 1,
+            'id': 5,
+            'name': 'What is a sprint in Agile?',
+            'email': 'Hayden@althea.biz',
+            'body': 'Sprint is one timeboxed iteration of a continuous '
+                    + 'development cycle. Within a Sprint, planned amount'
+                    + 'of work has to be completed by the team and made '
+                    + 'ready for review. The term is mainly used in Scrum '
+                    + 'Agile methodology but somewhat basic idea of Kanban '
+                    + 'continuous delivery is also essence of Sprint Scrum',
+          },
+        ],
+    },
+  ],
 };
-/*
-const data = {};
-data.post = () => {
-        var url = "https://jsonplaceholder.typicode.com/posts/1";
-        var req = new XMLHttpRequest();
-        req.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-            return JSON.parse(this.responseText);
-            }
-        };
-        req.open('GET' , url , true)
-        req.send()
-}
-data.comments = () => {
-        var url = "https://jsonplaceholder.typicode.com/comments?postId=1";
-        var req = new XMLHttpRequest();
-        req.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-            return JSON.parse(this.responseText);
-            }
-        };
-        req.open('GET' , url , true)
-        req.send()
-}*/
-export default data
+export default data;
