@@ -13,27 +13,28 @@ class Post extends React.Component {
     const {posts, addComment} = this.props;
     return (
       <div>
-        { posts.length &&
-                    posts.map((post) => (
-                      <div className="post" key={post.id}>
-                        <div className="post-title">
-                          <h1>#{post.id}.{post.title}</h1>
-                        </div>
-                        <div className="post-body">
-                          <p>{post.body}</p>
-                        </div>
-                        { post.comments.length &&
-                                post.comments.map((comment, i) =>
-                                  <Comment key={i} {...comment}/>
-                                )
-                        }
-                        <AddNewComment postid={post.id}
-                          addComment={addComment}/>
-                      </div>
-                    ))
-        }
-        { !posts.length &&
-                    <h1 style={{textAlign: 'center'}}>Create a New Post </h1>
+        {
+          posts.length ?
+          posts.map((post) => (
+            <div className="post" key={post.id}>
+              <div className="post-title">
+                <h1>#{post.id}.{post.title}</h1>
+              </div>
+              <div className="post-body">
+                <p>{post.body}</p>
+              </div>
+              { post.comments.length ?
+                      post.comments.map((comment, i) =>
+                        <Comment key={i} {...comment}/>
+                      )
+                : ''
+              }
+              <AddNewComment postid={post.id}
+                addComment={addComment}/>
+            </div>
+          ))
+          :
+            <h1 style={{textAlign: 'center'}}>Create a New Post </h1>
         }
       </div>
     );
